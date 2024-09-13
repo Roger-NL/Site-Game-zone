@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section h2,
+section h3,
+form button {
+    font-family: "Bungee", cursive;
+    font-weight: normal;
+}
+
+body, input, textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f5f6fa;
+    color: #2f3640;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #192a56;
+    color: #f5f6fa;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav a {
+    color: #f5f6fa;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #00a8ff;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container, 
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.platforms-list img {
+    height: 32px;
+}
+
+.platforms-list li {
+    display: inline;
+    margin-right: 16px;
+}
+
+section {
+    padding: 48px 0;
+    color: #2f3640;
+}
+
+section h2 {
+    margin-bottom: 24px;
+    color: #192a56;
+}
+
+.game-image {
+    margin-right: 32px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.feature-item {
+    background-color: #f5f6fa;
+    padding: 16px;
+    border: 2px solid #192a56;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.feature-item img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 16px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+.social-links img {
+    height: 32px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 16px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 12px;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #192a56;
+}
+
+form textarea {
+    resize: none;
+    height: 150px;
+}
+
+form button {
+    background-color: #192a56;
+    color: #f5f6fa;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #273c75;
+}
+
+input:focus, textarea:focus {
+    outline-color: #192a56;
+}
+
+footer {
+    background-color: #192a56;
+    color: #f5f6fa;
+    padding: 24px 0;
+    text-align: center;
+    margin-top: 24px;
+    border-top: 4px solid #273c75;
+}
